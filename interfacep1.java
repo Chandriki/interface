@@ -13,7 +13,7 @@ Client C=new Raju();
 interface Client
 {
 	void input();
-	
+	void output();
 }
 class Raju implements Client
 {
@@ -23,5 +23,11 @@ class Raju implements Client
 	{
 		System.out.println("enter name");
 		Scanner sc=new Scanner(System.in);
-		name=sc.nextLine();}
+		name=sc.nextLine();
+		salary=sc.nextInt();
+		}
+		public void output()
+		{
+		System.out.println(name+" "+salary);
+		}
 }
